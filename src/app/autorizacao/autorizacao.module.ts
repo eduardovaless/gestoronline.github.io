@@ -1,3 +1,4 @@
+
 import { AutorizacaoRoutingModule } from './autorizacao-routing.module';
 import { AutorizacaoFormComponent } from './autorizacao-form/autorizacao-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,10 +11,14 @@ import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTab, MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
+import { AutorizacaoFormularioComponent } from './autorizacao-formulario/autorizacao-formulario.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
-  declarations: [AutorizacaoFormComponent],
+  declarations: [AutorizacaoFormComponent, AutorizacaoFormularioComponent],
 
   imports: [
     BrowserAnimationsModule,
@@ -23,7 +28,11 @@ import {MatInputModule} from '@angular/material/input';
     AutorizacaoRoutingModule,
     MatTabsModule,
     MatTableModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatRadioModule,
+    MatIconModule
+    
     
   ],
   exports:[

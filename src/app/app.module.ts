@@ -1,3 +1,4 @@
+import { UsuarioModule } from './usuario/usuario.module';
 import { AutorizacaoModule } from './autorizacao/autorizacao.module';
 import { ColaboradorModule } from './colaborador/colaborador.module';
 
@@ -17,10 +18,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+ 
        
     
   ],
@@ -32,7 +35,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AutorizacaoModule,
     NoopAnimationsModule,
     HttpClientModule,
-
+    UsuarioModule
     
   ],
   providers: [   

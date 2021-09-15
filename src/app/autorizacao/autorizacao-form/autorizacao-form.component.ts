@@ -1,24 +1,33 @@
+import { Router, RouterModule } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  guia: number;
+  data: string;
+  colaborador: string;
+  exame: string;
+  datatend: string;
+}
+
+export interface PeriodicElementFicha {
+  nome: string;
+  nascimento: string;
+  area: string;
+  funcao: string;
+  telefone: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
- /* {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},*/
+    {guia: 1, data: '15/09/2021', colaborador: 'Eduardo Vales', exame: 'Demissional', datatend: '15/09/2021'},
+    {guia: 2, data: '15/09/2021', colaborador: 'Benjamim Vales', exame: 'Demissional', datatend: '15/09/2021'}
+  
 ];
+
+const ELEMENT_DATAFICHA: PeriodicElementFicha[] = [
+  {nome: 'Eduardo Vales', nascimento: '14/03/1996', area: 'Analista de Sistema', funcao: 'Desenvolvedor', telefone: '(71) 99999-9999'},
+  {nome: 'Benjamim Vales', nascimento: '19/06/2020', area: 'Analista de Sistema', funcao: 'Desenvolvedor', telefone: '(71) 99999-9999'}
+   
+ ];
 
 
 @Component({
@@ -29,12 +38,22 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class AutorizacaoFormComponent implements OnInit {
   backgroundColorToggle = "primary";
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'date'];
+  displayedColumns: string[] = ['guia', 'data', 'colaborador', 'exame', 'datatend'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  displayedColumnsFicha: string[] = ['nome', 'nascimento', 'area', 'funcao', 'telefone'];
+  dataSourceFicha = ELEMENT_DATAFICHA;
+
+  constructor(
+    private router: Router,
+
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openScheduleDialog(){
+    this.router.navigate(["/autorizacao-formulario"])    
   }
 
 }
