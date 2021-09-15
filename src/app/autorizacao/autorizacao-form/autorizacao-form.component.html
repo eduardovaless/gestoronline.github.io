@@ -1,0 +1,111 @@
+<h1 class="mt-4" style="color: rgb(0, 100, 100);">Autorização</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrum-bitem active">Encaminhamento de Fichas</li>
+
+</ol>
+
+
+<mat-tab-group>
+
+    <mat-tab label="Fichas Encaminhadas">
+        <br>
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Nome do Colaborador:</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="">
+            </mat-form-field>
+                     
+          </form>
+
+
+<!----------------------------------- TABELA ---------------------------- -->
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> Nº da Guia </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Data de Encaminhamento </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef> Colaborador </th>
+                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+                <th mat-header-cell *matHeaderCellDef> Tipo de Exame </th>
+                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef> Data de Atendimento </th>
+                <td mat-cell *matCellDef="let element"> </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+
+    </mat-tab>
+
+    <!----------------------------------------ENCAMINHAR FICHAS---------------------------------------->
+
+    <mat-tab label="Encaminhar Ficha">
+        <br>
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> Nome do colaborador </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Nascimento </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef> Área </th>
+                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+                <th mat-header-cell *matHeaderCellDef> Função </th>
+                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef> Telefone </th>
+                <td mat-cell *matCellDef="let element"> </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </mat-tab>
+
+</mat-tab-group>

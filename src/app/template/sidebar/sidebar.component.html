@@ -1,0 +1,106 @@
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" style="background-color:rgb(15, 140, 150); color: white;"
+        id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+
+
+                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="layout-static.html">Static
+                            Navigation</a><a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a></nav>
+                </div>
+
+                <!--------HOME-------->
+                <div class="sb-sidenav-menu-heading" style="color: rgb(222, 231, 228);">Gestor Online</div>
+
+                <a class="nav-link active" routerLink=""
+                ><div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                HOME</a>
+
+                <!--------OPERACIONAL-------->
+                <div class="sb-sidenav-menu-heading" style="color: rgb(222, 231, 228);">Operacional</div>
+
+                <!--------AUTORIZAÇÃO-------->
+                <a class="nav-link active" routerLink="/autorizacao-form"
+                    aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="fas fa-address-card"></i></div>
+                    Autorização
+                </a>
+
+
+                <!--------ASO-------->
+                <a class="nav-link active" href="aso.html"
+                    aria-expanded="false" aria-controls="collapsePages">
+                    <div class="sb-nav-link-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    ASO
+                </a>
+
+
+                <!--------------------------------------------------------------------------------------------------->
+                <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth"
+                            aria-expanded="false" aria-controls="pagesCollapseAuth">Authentication
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordionPages">
+                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="login.html">Login</a><a
+                                    class="nav-link" href="register.html">Register</a><a class="nav-link"
+                                    href="password.html">Forgot Password</a></nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError"
+                            aria-expanded="false" aria-controls="pagesCollapseError">Error
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordionPages">
+                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="401.html">401 Page</a><a
+                                    class="nav-link" href="404.html">404 Page</a><a class="nav-link" href="500.html">500
+                                    Page</a></nav>
+                        </div>
+                    </nav>
+                </div>
+                <!------------------------------------------------------------------------------------------------------->
+
+                <!--------CONVOCAÇÃO-------->
+                <a class="nav-link active" href="convocacao.html" >
+                    <div class="sb-nav-link-icon"><i class="fas fa-hospital"></i></div>
+                    Convocação
+                </a>
+
+                <!--------COLBORADOR-------->
+                <a class="nav-link active"  routerLink="colaborador-form">
+                    <div class="sb-nav-link-icon"><i class="fas fa-portrait"></i></div>
+                    Colaborador
+                </a>
+
+                <!--------EMPRESA-------->
+                <a class="nav-link active" href="empresa.html">
+                    <div class="sb-nav-link-icon"><i class="fas fa-building"></i></div>
+                    Empresa
+                </a>
+
+                <!--------FATURA-------->
+                <a class="nav-link active" href="fatura.html">
+                    <div class="sb-nav-link-icon"><i class="fas fa-funnel-dollar"></i></div>
+                    Fatura
+                </a>
+<br>
+                 <!--------FECHAR-------->
+                 <a class="nav-link active" href="sair.html">
+                    <div class="sb-nav-link-icon"><i class="fas fa-window-close"></i></div>
+                    Sair
+                </a>
+                
+
+
+            </div>
+        </div>
+
+        <div class="sb-sidenav-footer" style="background-color: rgb(8, 113, 121); color: white;">
+            <div class="small" style="color: white;">Logado por:</div>
+            Eduardo Vales
+        </div>
+    </nav>
+</div>
