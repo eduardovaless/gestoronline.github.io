@@ -20,7 +20,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class AutorizacaoFormularioComponent implements OnInit {
 
-  displayedColumns: string[] = ['codigo', 'descricao', 'quantidade'];
+  displayedColumns: string[] = ['codigo', 'descricao', 'quantidade', 'deletar'];
   dataSource = ELEMENT_DATA;
 
   constructor() { }
