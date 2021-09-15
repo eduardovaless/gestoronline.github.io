@@ -85,7 +85,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppComponent {
     constructor() {
-        this.title = 'clientes-app';
+        this.title = 'gestor';
     }
     ngAfterViewInit() {
         (function ($) {

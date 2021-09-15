@@ -172,7 +172,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       function AppComponent() {
         _classCallCheck(this, AppComponent);
 
-        this.title = 'clientes-app';
+        this.title = 'gestor';
       }
 
       _createClass(AppComponent, [{
