@@ -1,3 +1,5 @@
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 import { AsoRoutingModule } from './aso-routing.module';
 import { AsoFormComponent } from './aso-form/aso-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -29,8 +32,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatRadioModule,
     MatIconModule,
-    AsoRoutingModule
-    
+    AsoRoutingModule,
+    MatDatepickerModule,
+    MatNativeDateModule
     
   ],
   exports:[

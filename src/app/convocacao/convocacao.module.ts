@@ -13,6 +13,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -29,7 +33,11 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatRadioModule,
     MatIconModule,
-    ConvocacaoRoutingModule
+    ConvocacaoRoutingModule,
+    MatDatepickerModule,
+    MatSelectModule,
+    MatNativeDateModule
+    
     
     
     
