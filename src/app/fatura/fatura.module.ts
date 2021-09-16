@@ -1,3 +1,5 @@
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FaturaRoutingModule } from './fatura-routing.module';
 import { FaturaFormComponent } from './fatura-form/fatura-form.component';
 
@@ -30,7 +32,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatRadioModule,
     MatIconModule,
-    FaturaRoutingModule
+    FaturaRoutingModule,
+    MatDatepickerModule,
+    MatNativeDateModule
     
     
     
