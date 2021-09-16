@@ -38,18 +38,22 @@
 
     </div>
 
-    <!----------------------------------- STATUS ---------------------------- -->
-    <mat-card style="margin-right: 765px">
+    <div class="row">
+        <!----------------------------------- STATUS ---------------------------- -->
+        <mat-card style="margin-left: 15px">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Todos</mat-radio-button>
+                <mat-radio-button value="2" style="margin-left: 10px;">Abertas</mat-radio-button>
+                <mat-radio-button value="3" style="margin-left: 10px;">Fechadas</mat-radio-button>
+            </mat-radio-group>
+        </mat-card>
 
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Todos</mat-radio-button>
-            <mat-radio-button value="2" style="margin-left: 10px;">Abertas</mat-radio-button>
-            <mat-radio-button value="3" style="margin-left: 10px;">Fechadas</mat-radio-button>
-        </mat-radio-group>
-
-    </mat-card>
-
-
+        <!----------------------------------- LISTAR ---------------------------- -->
+        <button mat-mini-fab style="margin-left: 20px; background-color:rgb(15, 140, 150)">
+            <mat-icon>content_paste_search</mat-icon>
+        </button>
+        
+    </div>
 
 
     <br>
