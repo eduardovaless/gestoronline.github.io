@@ -1,3 +1,4 @@
+
 import { FormsModule } from '@angular/forms';
 import { FaturaModule } from './fatura/fatura.module';
 import { EmpresaModule } from './empresa/empresa.module';
@@ -57,7 +58,7 @@ import { LayoutComponent } from './layout/layout.component';
     ConvocacaoModule,
     EmpresaModule,
     FaturaModule,
-    FormsModule
+    FormsModule,
     
   ],
   providers: [   
