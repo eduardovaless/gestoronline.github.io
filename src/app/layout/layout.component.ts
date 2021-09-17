@@ -5,7 +5,6 @@ import { Component, AfterViewInit } from '@angular/core';
 
 
 
-
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
