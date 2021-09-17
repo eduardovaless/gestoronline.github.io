@@ -1,4 +1,4 @@
-import jQuery  from 'jQuery';
+import jQuery from 'jQuery';
 
 
 import { Component, AfterViewInit } from '@angular/core';
