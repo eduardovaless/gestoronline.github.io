@@ -6,6 +6,8 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false,
     "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
