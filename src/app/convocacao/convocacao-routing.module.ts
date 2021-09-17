@@ -1,3 +1,4 @@
+import { LayoutComponent } from './../layout/layout.component';
 import { ConvocacaoFormComponent } from './convocacao-form/convocacao-form.component';
 
 
@@ -6,8 +7,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'convocacao-form', component: ConvocacaoFormComponent},
-  
+  {
+    path: 'convocacao', component: LayoutComponent, children: [
+      { path: 'form', component: ConvocacaoFormComponent }
+    ]
+  }
+
 ];
 
 @NgModule({

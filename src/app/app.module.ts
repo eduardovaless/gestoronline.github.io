@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { FaturaModule } from './fatura/fatura.module';
 import { EmpresaModule } from './empresa/empresa.module';
 import { ConvocacaoModule } from './convocacao/convocacao.module';
@@ -18,6 +19,8 @@ import { HomeComponent } from './home/home.component'
 import { HttpClientModule } from '@angular/common/http';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login/login.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 
@@ -31,6 +34,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     HomeComponent,
+    LoginComponent,
+    LayoutComponent,
     
     
     
@@ -51,7 +56,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AsoModule,
     ConvocacaoModule,
     EmpresaModule,
-    FaturaModule
+    FaturaModule,
+    FormsModule
     
   ],
   providers: [   

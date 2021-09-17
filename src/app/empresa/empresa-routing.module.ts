@@ -1,3 +1,4 @@
+import { LayoutComponent } from './../layout/layout.component';
 import { EmpresaFormComponent } from './empresa-form/empresa-form.component';
 
 
@@ -6,8 +7,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'empresa-form', component: EmpresaFormComponent},
-  
+  {
+    path: 'empresa', component: LayoutComponent, children: [
+      { path: 'form', component: EmpresaFormComponent }
+    ]
+  }
+
 ];
 
 @NgModule({

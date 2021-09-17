@@ -1,3 +1,4 @@
+import { LayoutComponent } from './../layout/layout.component';
 import { FaturaFormComponent } from './fatura-form/fatura-form.component';
 
 
@@ -6,8 +7,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'fatura-form', component: FaturaFormComponent},
-  
+  {
+    path: 'fatura', component: LayoutComponent, children: [
+      { path: 'form', component: FaturaFormComponent }
+    ]
+  }
+
 ];
 
 @NgModule({

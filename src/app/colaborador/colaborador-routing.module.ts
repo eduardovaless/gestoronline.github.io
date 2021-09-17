@@ -1,3 +1,4 @@
+import { LayoutComponent } from './../layout/layout.component';
 import { ColaboradorListComponent } from './colaborador-list/colaborador-list.component';
 import { ColaboradorFormComponent } from './colaborador-form/colaborador-form.component';
 
@@ -6,8 +7,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'colaborador-form', component: ColaboradorFormComponent},
-  { path: 'colaborador-list', component: ColaboradorListComponent}
+  {
+    path: 'colaborador', component: LayoutComponent, children: [
+      { path: 'form', component: ColaboradorFormComponent },
+      { path: 'list', component: ColaboradorListComponent }
+    ]
+  }
+
 ];
 
 @NgModule({

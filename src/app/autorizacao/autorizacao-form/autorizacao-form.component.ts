@@ -53,7 +53,7 @@ export class AutorizacaoFormComponent implements OnInit {
   }
 
   openScheduleDialog(){
-    this.router.navigate(["/autorizacao-formulario"])    
+    this.router.navigate(["/autorizacao/form"])    
   }
 
 }
