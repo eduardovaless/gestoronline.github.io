@@ -1,0 +1,24 @@
+
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+.example-sidenav{
+  background-color: rgb(15, 140, 150);
+  display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+  max-height: 100%;
+  margin-top: 55px ;
+  
+}
+
+.menu{
+  color: white;
+  
+}
