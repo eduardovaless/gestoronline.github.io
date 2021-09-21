@@ -6901,9 +6901,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./../../environments/environment */
-    "./src/environments/environment.ts");
+    var src_environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! src/environments/environment.prod */
+    "./src/environments/environment.prod.ts");
     /* harmony import */
 
 
@@ -6922,7 +6922,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, ServiceEmpresaService);
 
         this.http = http;
-        this.apiURL = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiURL + '/datasnap/rest/TEntityController/empresa';
+        this.apiURL = src_environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__["environment"].apiURL + '/datasnap/rest/TEntityController/empresa';
       } //Get   
 
 
@@ -7716,6 +7716,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     })();
     /***/
 
+  },
+
+  /***/
+  "./src/environments/environment.prod.ts":
+  /*!**********************************************!*\
+    !*** ./src/environments/environment.prod.ts ***!
+    \**********************************************/
+
+  /*! exports provided: environment */
+
+  /***/
+  function srcEnvironmentsEnvironmentProdTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "environment", function () {
+      return environment;
+    });
+
+    var environment = {
+      production: true,
+      apiURL: 'https://0e85-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
+    };
+    /***/
   },
 
   /***/
