@@ -5,7 +5,7 @@
       Gestor Online</a>
   
     <button mat-button type="button" style="color: white; background-color: rgb(8, 113, 121);" mat-button
-      (click)="drawer.toggle()">
+      (click)="drawer.toggle()" (click)="drawer2.toggle()">
       <mat-icon>reorder</mat-icon>
     </button>
   
@@ -30,7 +30,7 @@
       <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);"> <br> Gestor Online</div> 
   
       <!--------HOME-------->
-      <a class="nav-link active" routerLink="/home/home">
+      <a class="nav-link" routerLink="/home/home">
         <div class="menu row" style="margin-left: 10px;"> <i class="fas fa-home icon"></i>
           <p style="margin-left: 10px;" class="name">HOME</p>
         </div>
@@ -41,56 +41,60 @@
       <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);">Operacional</div>
   
       <!--------AUTORIZAÇÃO-------->
-      <a class="nav-link active" routerLink="/autorizacao/list">
+      <a class="nav-link" routerLink="/autorizacao/list">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-address-card icon"></i>
           <p class="name" style="margin-left: 10px;">Autorização</p>
         </div>
       </a>
   
       <!--------ASO-------->
-      <a class="nav-link active" routerLink="/aso/form">
+      <a class="nav-link" routerLink="/aso/form">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-chalkboard-teacher icon"></i>
           <p class="name" style="margin-left: 10px;">ASO</p>
         </div>
       </a>
   
       <!--------CONVOCAÇÃO-------->
-      <a class="nav-link active" routerLink="/convocacao/form">
+      <a class="nav-link" routerLink="/convocacao/form">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-hospital icon"></i>
           <p style="margin-left: 10px;" class="name">Convocação</p>
         </div>
       </a>
   
       <!--------COLBORADOR-------->
-      <a class="nav-link active" routerLink="/colaborador/list">
+      <a class="nav-link" routerLink="/colaborador/list">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-portrait icon"></i>
           <p style="margin-left: 10px;" class="name">Colaborador</p>
         </div>
       </a>
   
       <!--------EMPRESA-------->
-      <a class="nav-link active" routerLink="/empresa/form">
+      <a class="nav-link" routerLink="/empresa/form">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-building icon"></i>
           <p style="margin-left: 10px;" class="name">Empresa</p>
         </div>
       </a>
   
       <!--------FATURA-------->
-      <a class="nav-link active" routerLink="/fatura/form">
+      <a class="nav-link" routerLink="/fatura/form">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-funnel-dollar icon"></i>
           <p style="margin-left: 10px;" class="name">Fatura</p>
         </div>
       </a>
       <br>
       <!--------FECHAR-------->
-      <a class="nav-link active" routerLink="">
+      <a class="nav-link" routerLink="">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-window-close icon"></i>
           <p style="margin-left: 10px;" class="name">Sair</p>
         </div>
       </a>
   
+      
     </mat-drawer>
-  
+    
+
+<!------------------------------------------------------------------------------------------------>
+
   
   
     <br><br>
@@ -100,7 +104,7 @@
   
     <!--BODY-->
     <main>
-      <div class="container-fluid">
+      <div class="container">
           <br>
         <router-outlet></router-outlet>
      <!--FOOTER-->
@@ -125,3 +129,66 @@
     </main>
   
   </mat-drawer-container>
+
+  <mat-drawer #drawer2 class="example-sidenav2" mode="side" opened>
+  
+    
+
+    <!--------HOME-------->
+    <a class="nav-link active" routerLink="/home/home">
+      <div class="menu1 row" style="margin-left: 10px;"> <i class="fas fa-home icon2"></i>
+        
+      </div>
+    </a>
+
+
+    <!--------AUTORIZAÇÃO-------->
+    <a class="nav-link active" routerLink="/autorizacao/list">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-address-card icon2"></i>
+        
+      </div>
+    </a>
+
+    <!--------ASO-------->
+    <a class="nav-link active" routerLink="/aso/form">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-chalkboard-teacher icon2"></i>
+       
+      </div>
+    </a>
+
+    <!--------CONVOCAÇÃO-------->
+    <a class="nav-link active" routerLink="/convocacao/form">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-hospital icon2"></i>
+        
+      </div>
+    </a>
+
+    <!--------COLBORADOR-------->
+    <a class="nav-link active" routerLink="/colaborador/list">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-portrait icon2"></i>
+       
+      </div>
+    </a>
+
+    <!--------EMPRESA-------->
+    <a class="nav-link active" routerLink="/empresa/form">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-building icon2"></i>
+       
+      </div>
+    </a>
+
+    <!--------FATURA-------->
+    <a class="nav-link active" routerLink="/fatura/form">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-funnel-dollar icon2"></i>
+        
+      </div>
+    </a>
+    <br>
+    <!--------FECHAR-------->
+    <a class="nav-link active" routerLink="">
+      <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-window-close icon2"></i>
+       
+      </div>
+    </a>
+
+  </mat-drawer>

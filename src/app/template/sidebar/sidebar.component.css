@@ -18,8 +18,19 @@
   
 }
 
+.example-sidenav2{
+  background-color: rgb(15, 140, 150);
+  display: inline-block;
+    width: 5%;
+    margin: 0 auto;
+  max-height: 100%;
+  margin-top: 55px ;
+  
+}
+
 .menu{
   color: white;
+  margin-top: 5px;
   
 }
 
@@ -27,8 +38,10 @@
   background-color: rgb(8, 113, 121);
   border-radius: 10px;
   display: flex;
-  cursor: default; 
+  cursor: pointer; 
 }
+
+
 
 .nav-link{
   cursor: default;
@@ -42,3 +55,23 @@
   margin-left: 20px;
   margin-top: 10px;
 }
+
+.icon2{
+  margin-top: 20px; 
+   
+  
+}
+.icon2:hover{
+  background-color: rgb(8, 113, 121);
+  border-radius: 10px;  
+  display: flex;
+  cursor: pointer; 
+  font-size: 25px;
+  background: 30px;
+  
+}
+
+.menu1{
+  color: white;   
+}
+
