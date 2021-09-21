@@ -7836,7 +7836,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: true,
-      apiURL: 'http://127f-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
+      apiURL: 'https://127f-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
     };
     /***/
   },
@@ -7865,8 +7865,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     var environment = {
-      production: false,
-      apiURL: 'http://127f-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
+      production: true,
+      apiURL: 'https://127f-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
     };
     /*
      * For easier debugging in development mode, you can import the following file
