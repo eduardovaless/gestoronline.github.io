@@ -63,7 +63,7 @@
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumnsFicha"></tr>
-        <tr mat-row *matRowDef="let linha; columns: displayedColumnsFicha;"></tr>
+        <tr mat-row class="selecao" *matRowDef="let linha; columns: displayedColumnsFicha;"></tr>
     </table>
 
 

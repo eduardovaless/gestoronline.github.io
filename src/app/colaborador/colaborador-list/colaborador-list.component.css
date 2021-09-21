@@ -12,3 +12,8 @@
     width: 100%;
     background-color: rgb(227, 235, 234);
   }
+
+  .selecao:hover {
+    background: rgb(15, 140, 150);     
+    cursor: default;
+  }

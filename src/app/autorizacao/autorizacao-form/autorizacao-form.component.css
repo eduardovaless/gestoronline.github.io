@@ -25,3 +25,7 @@
   .example-full-width {
     width: 100%;
   }
+  .encaminhar:hover {
+    background: rgb(15, 140, 150);     
+    cursor: default;
+  }

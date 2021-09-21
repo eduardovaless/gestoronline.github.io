@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
@@ -18,12 +19,17 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-fatura-form',
   templateUrl: './fatura-form.component.html',
-  styleUrls: ['./fatura-form.component.css']
+  styleUrls: ['./fatura-form.component.css'],
+  
+    
 })
+
+
 export class FaturaFormComponent implements OnInit {
 
   displayedColumns: string[] = ['fatura', 'datafatura', 'dataemissao', 'previsao', 'status', 'valor'];
   dataSource = ELEMENT_DATA;
+  expandedElement: PeriodicElement | null;
 
   constructor() { }
 

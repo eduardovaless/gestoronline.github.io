@@ -1,3 +1,4 @@
+import { ServiceEmpresaService } from './services/service-empresa.service';
 
 import { FormsModule } from '@angular/forms';
 import { FaturaModule } from './fatura/fatura.module';
@@ -25,24 +26,14 @@ import { LayoutComponent } from './layout/layout.component';
 
 
 
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
     LayoutComponent,
-    
-    
-    
- 
- 
-       
+        
+        
     
   ],
   imports: [
@@ -62,6 +53,7 @@ import { LayoutComponent } from './layout/layout.component';
     
   ],
   providers: [   
+    ServiceEmpresaService
   ],
   bootstrap: [AppComponent]
 })

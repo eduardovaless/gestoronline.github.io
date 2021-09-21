@@ -26,3 +26,7 @@
     width: 95%;
     margin-left: 13px;
   }
+  .encaminhar:hover {
+    background: rgb(15, 140, 150);   
+    cursor: default;  
+  }

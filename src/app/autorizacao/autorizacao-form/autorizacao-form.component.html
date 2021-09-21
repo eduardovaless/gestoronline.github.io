@@ -56,7 +56,7 @@
                 </ng-container>
     
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row 
+                <tr mat-row
                 *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
     
@@ -112,7 +112,7 @@
                 </ng-container>
     
                 <tr mat-header-row *matHeaderRowDef="displayedColumnsFicha"></tr>
-                <tr mat-row (dblclick)="openScheduleDialog()" 
+                <tr class="encaminhar" mat-row (dblclick)="openScheduleDialog()" 
                 *matRowDef="let linha; columns: displayedColumnsFicha;"></tr>
             </table>
     

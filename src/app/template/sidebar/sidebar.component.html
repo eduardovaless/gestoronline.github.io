@@ -1,5 +1,6 @@
-<nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: rgb(8, 113, 121);">
-    <a class="navbar-brand" style="background-color: rgb(8, 113, 121);" href="#">
+<nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: rgb(8, 113, 121);"
+>
+    <a class="navbar-brand" style="background-color: rgb(8, 113, 121);" routerLink="home/home">
       <img src="assets/images/logo2.png" alt="logo">
       Gestor Online</a>
   
@@ -14,7 +15,7 @@
       <div style="margin-left:38px">Cnpj: 95241618000150</div>
     </div>
   
-    <div class="navbar-brand" style="margin-left: 300px;">Clinica Ocupacional</div>
+    <div class="navbar-brand" style="margin-left: 300px;"><span >{{nomeFantasia}}</span></div>
   
   </nav>
   
@@ -26,65 +27,65 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
   
       <!--------GESTOR ONLINE-------->
-      <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);"> <br> Gestor Online</div> <br>
+      <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);"> <br> Gestor Online</div> 
   
       <!--------HOME-------->
       <a class="nav-link active" routerLink="/home/home">
-        <div class="menu row" style="margin-left: 10px;"> <i class="fas fa-home"></i>
-          <p style="margin-left: 10px;">HOME</p>
+        <div class="menu row" style="margin-left: 10px;"> <i class="fas fa-home icon"></i>
+          <p style="margin-left: 10px;" class="name">HOME</p>
         </div>
       </a>
   
   
       <!--------OPERACIONAL-------->
-      <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);">Operacional</div><br>
+      <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);">Operacional</div>
   
       <!--------AUTORIZAÇÃO-------->
       <a class="nav-link active" routerLink="/autorizacao/list">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-address-card"></i>
-          <p style="margin-left: 10px;">Autorização</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-address-card icon"></i>
+          <p class="name" style="margin-left: 10px;">Autorização</p>
         </div>
       </a>
   
       <!--------ASO-------->
       <a class="nav-link active" routerLink="/aso/form">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-chalkboard-teacher"></i>
-          <p style="margin-left: 10px;">ASO</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-chalkboard-teacher icon"></i>
+          <p class="name" style="margin-left: 10px;">ASO</p>
         </div>
       </a>
   
       <!--------CONVOCAÇÃO-------->
       <a class="nav-link active" routerLink="/convocacao/form">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-hospital"></i>
-          <p style="margin-left: 10px;">Convocação</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-hospital icon"></i>
+          <p style="margin-left: 10px;" class="name">Convocação</p>
         </div>
       </a>
   
       <!--------COLBORADOR-------->
       <a class="nav-link active" routerLink="/colaborador/list">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-portrait"></i>
-          <p style="margin-left: 10px;">Colaborador</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-portrait icon"></i>
+          <p style="margin-left: 10px;" class="name">Colaborador</p>
         </div>
       </a>
   
       <!--------EMPRESA-------->
       <a class="nav-link active" routerLink="/empresa/form">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-building"></i>
-          <p style="margin-left: 10px;">Empresa</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-building icon"></i>
+          <p style="margin-left: 10px;" class="name">Empresa</p>
         </div>
       </a>
   
       <!--------FATURA-------->
       <a class="nav-link active" routerLink="/fatura/form">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-funnel-dollar"></i>
-          <p style="margin-left: 10px;">Fatura</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-funnel-dollar icon"></i>
+          <p style="margin-left: 10px;" class="name">Fatura</p>
         </div>
       </a>
       <br>
       <!--------FECHAR-------->
       <a class="nav-link active" routerLink="">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-window-close"></i>
-          <p style="margin-left: 10px;">Sair</p>
+        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-window-close icon"></i>
+          <p style="margin-left: 10px;" class="name">Sair</p>
         </div>
       </a>
   

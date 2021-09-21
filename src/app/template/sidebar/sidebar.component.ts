@@ -1,9 +1,11 @@
+import { DadosEmpresa } from './../dadosempresa';
+import { ServiceEmpresaService } from './../../services/service-empresa.service';
 import { Component, OnInit } from '@angular/core';
 
 
 
 var data = new Date();
-var ano= data.getFullYear();
+var ano = data.getFullYear();
 
 
 @Component({
@@ -15,13 +17,24 @@ var ano= data.getFullYear();
 
 export class SidebarComponent implements OnInit {
 
+  dadosempresa: DadosEmpresa;
   anoAtual= ano;
+  nomeFantasia = ""
   
-  constructor() { 
+  
+  constructor(
+    private serviceEmpresa: ServiceEmpresaService
 
+  ) {      
+    
+    
   }
 
   ngOnInit(): void {
+    this.getclinica()
   }
 
+  getclinica(){    
+    this.serviceEmpresa.getClinica().subscribe(resposta => this.nomeFantasia = resposta.nomeFantasia);
+      }
 }
