@@ -1,13 +1,15 @@
+import { AuthService } from './login/auth.service';
+import { AuthGuardService } from './login/auth-guard.service';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { SnackBarService } from './services/snackbar.service';
+import { PacienteModule } from './paciente/paciente.module';
+import { AgendaModule } from './agenda/agenda.module';
 import { ServiceEmpresaService } from './services/service-empresa.service';
 
 import { FormsModule } from '@angular/forms';
-import { FaturaModule } from './fatura/fatura.module';
-import { EmpresaModule } from './empresa/empresa.module';
-import { ConvocacaoModule } from './convocacao/convocacao.module';
-import { AsoModule } from './aso/aso.module';
+
 import { UsuarioModule } from './usuario/usuario.module';
-import { AutorizacaoModule } from './autorizacao/autorizacao.module';
-import { ColaboradorModule } from './colaborador/colaborador.module';
+
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,12 +28,16 @@ import { LayoutComponent } from './layout/layout.component';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
     LayoutComponent,
+    
+ 
         
         
     
@@ -39,21 +45,21 @@ import { LayoutComponent } from './layout/layout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TemplateModule,
-    ColaboradorModule,
-    AutorizacaoModule,
+    TemplateModule,     
     NoopAnimationsModule,
     HttpClientModule,
     UsuarioModule,
-    AsoModule,
-    ConvocacaoModule,
-    EmpresaModule,
-    FaturaModule,
     FormsModule,
+    AgendaModule,
+    PacienteModule,
+    MatSnackBarModule
     
   ],
   providers: [   
-    ServiceEmpresaService
+    ServiceEmpresaService,
+    SnackBarService,
+    AuthGuardService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
