@@ -1,0 +1,261 @@
+<div class="container">
+    <h1 class="mt-4" style="color: rgb(0, 100, 100);">Pacientes</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrum-bitem active">Registro</li>
+    </ol>
+
+    <!-- -----------------------------ID------------------------------------------- -->
+
+    <form #m="ngForm">
+        <div class="row" *ngIf="">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>ID</label>
+                    <input type="text" class="form-control" name="id" [ngModel]="" disabled="true">
+                </div>
+            </div>
+            <!-- -------------------------DATA CADASTRO------------------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Data de Cadastro</label>
+                    <input type="text" class="form-control" name="dataCadastro" [ngModel]="" disabled="true">
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------NOME-------------------------------------- -->
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>Nome *</label>
+                    <input type="text" class="form-control" name="nome">
+                </div>
+            </div>
+            <!-- ----------------------------NASCIMENTO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Data de Nascimento </label>
+                    <input type="date" class="form-control" name="nascimento">
+                </div>
+            </div>
+
+            <!-- ----------------------------EMAIL------------------------------ -->
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>e-Mail</label>
+                    <input type="text" class="form-control" name="email">
+                </div>
+            </div>
+
+            <!-- ----------------------------ENDEREÇO------------------------------ -->
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>Endereço</label>
+                    <input type="text" class="form-control" name="endereco">
+                </div>
+            </div>
+
+            <!-- ----------------------------NUMERO------------------------------ -->
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label>Número</label>
+                    <input type="text" class="form-control" name="numero">
+                </div>
+            </div>
+
+            <!-- ----------------------------COMPLEMENTO------------------------------ -->
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Complemento</label>
+                    <input type="text" class="form-control" name="complemento">
+                </div>
+            </div>
+
+            <!-- ----------------------------CEP------------------------------ -->
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>CEP</label>
+                    <input type="text" class="form-control" name="cep">
+                </div>
+            </div>
+
+            <!-- ----------------------------BAIRRO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Bairro</label>
+                    <input type="text" class="form-control" name="cidade">
+                </div>
+            </div>
+
+            <!-- ----------------------------CIDADE------------------------------ -->
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Cidade</label>
+                    <input type="text" class="form-control" name="cidade">
+                </div>
+            </div>
+
+            <!-- ----------------------------UF------------------------------ -->
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label>UF</label>
+                    <input type="text" class="form-control" name="uf">
+                </div>
+            </div>
+
+            <!-- ----------------------------TELEFONE------------------------------ -->
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="text" class="form-control" name="telefone">
+                </div>
+            </div>
+
+            <!-- ----------------------------COMERCIAL------------------------------ -->
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Comercial</label>
+                    <input type="text" class="form-control" name="comercial">
+                </div>
+            </div>
+
+            <!-- ----------------------------CELULAR------------------------------ -->
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" class="form-control" name="celular">
+                </div>
+            </div>
+
+            <!-- ----------------------------RG------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>RG</label>
+                    <input type="text" class="form-control" name="rg">
+                </div>
+            </div>
+
+            <!-- ----------------------------CPF------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>CPF</label>
+                    <input type="text" class="form-control" name="cpf">
+                </div>
+            </div>
+
+            <!-- ----------------------------PIS/PASEP------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>PIS/PASEP</label>
+                    <input type="text" class="form-control" name="pis">
+                </div>
+            </div>
+
+            <!-- ----------------------------CTPS------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>CTPS</label>
+                    <input type="text" class="form-control" name="ctps">
+                </div>
+            </div>
+
+            <!-- ----------------------------AREA------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Área</label>
+                    <input type="text" class="form-control" name="area">
+                </div>
+            </div>
+
+            <!-- ----------------------------FUNÇÃO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Função</label>
+                    <input type="text" class="form-control" name="funcao">
+                </div>
+            </div>
+
+            <!-- ----------------------------ADMISSÃO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Data de Admissão</label>
+                    <input type="date" class="form-control" name="admissao">
+                </div>
+            </div>
+
+            <!-- ----------------------------DEMISSÃO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Data de Demissão</label>
+                    <input type="date" class="form-control" name="demissao">
+                </div>
+            </div>
+
+            <!-- ----------------------------ESTAVO CIVIL------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Estado Civil</label>
+                    <input type="text" class="form-control" name="civil">
+                </div>
+            </div>
+
+            <!-- ----------------------------GÊNERO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Gênero</label>
+                    <input type="text" class="form-control" name="genero">
+                </div>
+            </div>
+
+            <!-- ----------------------------NATURALIDADE------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Naturalidade</label>
+                    <input type="text" class="form-control" name="naturalidade">
+                </div>
+            </div>
+
+            <!-- ----------------------------INCLUIDO------------------------------ -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Incluido por:</label>
+                    <input type="text" class="form-control" name="incluido">
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- -------------------------------------------------------------------------- -->
+        <!-- ---------------------------Botões----------------------------------------- -->
+
+        <div class="row">
+            <div class="col-md-0">
+
+                <!-- ---------------------------Botão Salvar----------------------------------------- -->
+
+                <button type="submit" class="btn ml-3" style="background-color: rgb(70, 211, 70); color: white;"
+                    mat-raised-button color="primary">
+                    <i class="icone fa fa-save"> </i> Salvar
+                </button>
+
+
+                <!-- ---------------------------Botão Voltar----------------------------------------- -->
+
+
+                <button type="button" class="btn ml-3" style="background-color: rgb(192, 100, 13);" mat-raised-button
+                    color="primary" routerLink="/paciente/list">
+                    <i class="icone fa fa-reply"> </i> Voltar
+                </button>
+
+                <!-- ------------------------------------------------------------------------------- -->
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------- -->
+    </form>
+</div>

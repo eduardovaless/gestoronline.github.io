@@ -1,7 +1,7 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: rgb(8, 113, 121);">
     <a class="navbar-brand" style="background-color: rgb(8, 113, 121);" href="#">
         <img src="assets/images/logo2.png" alt="logo">   
-        Gestor Online</a>
+        ClinicAll Medic</a>
       
     
     <div class="navbar-brand">
@@ -32,7 +32,7 @@
 
                                 <div style="margin-left:85px; margin-top: -50px;">
                                     
-                                    Gestor Online - Versão: 17/09/2021 <br>
+                                    ClinicAll Medic - Versão: 17/09/2021 <br>
                                     Direitor Autorais: <br> Focus Tecnologia em Sistemas
                                 </div>
                                 
@@ -45,26 +45,26 @@
                             </div>
 
                             <div class="card-body">
-                                <div class="alert-danger" *ngIf="loginError">
+                                <div class="alert-danger" *ngIf="">
                                     Login e/ou Senha incorreto(a).
                                 </div>
 
                                 <form #loginFrom="ngForm" (submit)="onSubmit();">
                                     <!--Login-->
                                     <div class="form-group">
-                                        <label class="small mb-1">CNPJ:</label>
-                                        <input type="text" name="username" [(ngModel)]="username" class="form-control"
-                                            placeholder="Digite seu CNPJ">
+                                        <label class="small mb-1">Login:</label>
+                                        <input type="text" name="username" [(ngModel)]="usuario.userName" class="form-control"
+                                            placeholder="Digite seu Login">
                                     </div>
                                     <!--Senha-->
                                     <div class="form-group">
                                         <label class="small mb-1">Senha:</label>
-                                        <input type="password" name="password" [(ngModel)]="password"
+                                        <input type="password" name="password" [(ngModel)]="usuario.password"
                                             class="form-control" placeholder="Digite sua senha">
                                     </div>
                                     <!--Botoes-->
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">Entrar</button>
+                                        <button type="submit" class="btn btn-primary" (click)="fazerLogin()">Entrar</button>
                                     </div>
 
                                 </form>
