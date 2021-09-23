@@ -1,0 +1,70 @@
+<div class="container">
+    <h1 class="mt-4" style="color: rgb(0, 100, 100);">Colaborador</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrum-bitem active">Listagem</li>
+
+    </ol>
+
+
+    <br>
+<div class="row">
+    
+        <!----------------------------------- PESQUISAR ---------------------------- -->
+        <form class="example-form" style="margin-left: 15px;">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Nome do Colaborador:</mat-label>
+                <input matInput placeholder="Digite aqui!" value="">
+            </mat-form-field>
+        </form>
+    
+    
+        <!--- BOTÃO -->
+        <button mat-fab 
+        style="margin-left: 35px; background-color:rgb(15, 140, 150)" 
+        routerLink="/colaborador/form">
+            <mat-icon>add</mat-icon>
+        </button>
+</div>
+
+
+    <!--- TABELA -->
+    <table mat-table [dataSource]="dataSourceFicha" class="mat-elevation-z8">
+
+
+
+        <!-- nome Column -->
+        <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef> Nome do colaborador </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+        </ng-container>
+
+        <!-- nascimento Column -->
+        <ng-container matColumnDef="nascimento">
+            <th mat-header-cell *matHeaderCellDef> Nascimento </th>
+            <td mat-cell *matCellDef="let element"> {{element.nascimento}} </td>
+        </ng-container>
+
+        <!-- area Column -->
+        <ng-container matColumnDef="funcao">
+            <th mat-header-cell *matHeaderCellDef> Área </th>
+            <td mat-cell *matCellDef="let element"> {{element.funcao}} </td>
+        </ng-container>
+
+        <!-- funcao Column -->
+        <ng-container matColumnDef="rg">
+            <th mat-header-cell *matHeaderCellDef> Função </th>
+            <td mat-cell *matCellDef="let element"> {{element.rg}} </td>
+        </ng-container>
+
+        <!-- telefone Column -->
+        <ng-container matColumnDef="cpf">
+            <th mat-header-cell *matHeaderCellDef> Telefone </th>
+            <td mat-cell *matCellDef="let element"> {{element.cpf}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsFicha"></tr>
+        <tr mat-row class="selecao" *matRowDef="let linha; columns: displayedColumnsFicha;"></tr>
+    </table>
+
+
+</div>

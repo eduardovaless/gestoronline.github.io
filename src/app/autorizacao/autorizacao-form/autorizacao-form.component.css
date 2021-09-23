@@ -1,0 +1,31 @@
+.mat-tab-label-active {
+    color: #ac0d0d !important;
+ }
+
+ .mat-tab-label {
+    color: #000000;
+  }
+
+  .mat-tab-label-content {
+      color: #000000;
+  }
+
+  table {
+    
+    width: 100%;
+    background-color: rgb(227, 235, 234);
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .encaminhar:hover {
+    background: rgb(15, 140, 150);     
+    cursor: default;
+  }
