@@ -3988,7 +3988,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 const environment = {
     production: true,
-    apiURL: 'https://127f-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
+    apiURL: 'http://9a73-2804-7f7-a286-678b-3818-7d40-381a-48ea.ngrok.io'
 };
 
 
@@ -4009,7 +4009,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: true,
-    apiURL: 'https://127f-2804-7f7-a286-678b-9dc-40-bf5d-ee32.ngrok.io'
+    apiURL: 'http://9a73-2804-7f7-a286-678b-3818-7d40-381a-48ea.ngrok.io'
 };
 /*
  * For easier debugging in development mode, you can import the following file
